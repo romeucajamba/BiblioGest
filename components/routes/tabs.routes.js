@@ -4,7 +4,7 @@ import {MaterialIcons} from '@expo/vector-icons';
 //Importação das telas
 import { LoginScreen } from '../../layout/screen/Login/Login';
 import { Home } from '../../layout/home/home';
-import { Profile } from '../../layout/screen/perfil/profile';
+import { Profile } from '../../layout/home/perfil/profile';
 
 
 
@@ -23,19 +23,6 @@ export function TabsRoutes() {
 
             <Group screenOptions={{ headerShown: false }}>
                 
-                <Screen
-                    name='Login'
-                    component={LoginScreen}
-                    options={{
-                        tabBarLabel: 'Login',
-                        tabBarIcon: ({color, size}) =>{
-                            <MaterialIcons
-                                color={color}
-                                size={size}
-                            />
-                        }
-                    }}
-                />
                 <Screen
                     name='Home'
                     component={Home}

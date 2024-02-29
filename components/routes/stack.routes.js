@@ -1,8 +1,17 @@
 //Importar a navegação em pilha
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {LoginScreen} from '../../layout/screen/Login/Login';
 
+//As telas importadas
+
+import {LoginScreen} from '../../layout/screen/Login/Login';
+import { SingUp } from '../../layout/screen/sigup/signup';
+import { PassWord } from '../../layout/screen/getPassWord/password';
+import { Home } from '../../layout/home/home';
+import { Profile } from '../../layout/home/perfil/profile';
+import { Books } from '../../layout/home/books/books';
+import { Reserva } from '../../layout/home/reservar/reserva';
+import { History } from '../../layout/home/perfil/histroy/history'; 
 
 const {Group, Screen, Navigator} = createNativeStackNavigator()
 //Navigator Permite criar as navegações
@@ -20,7 +29,37 @@ export function StackRoutes() {
                     component={LoginScreen}
                 />
 
+                <Screen
+                    name='SingUp'
+                    component={SingUp}
+                />
                 
+                <Screen 
+                    name='PassWord'
+                    component={PassWord}
+                />
+                <Screen 
+                    name='Home'
+                    component={Home}
+                />
+                <Screen
+                    name='Profile'
+                    component={Profile}
+                />
+
+                <Screen
+                    name='History'
+                    component={History}
+                />
+
+                <Screen 
+                    name='Books'
+                    component={Books}
+                />
+                <Screen 
+                    name='Reserva'
+                    component={Reserva}
+                />
             </Group>
         </Navigator>
     );

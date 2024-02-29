@@ -1,25 +1,24 @@
-import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, ScrollView, Image, TouchableOpacity } from "react-native";
 
-// Biblioteca de icons
-import { AntDesign,  SimpleLineIcons } from '@expo/vector-icons';
-
-import styles from './styles';
-
+//Estilo da página
+import styles from "./styles";
 
 //Imagens
-import livro1 from '../../assets/JoséSaramago.png';
-import livro2 from  '../../assets/AMaiorFlordoMundo2.png';
-import livro3  from '../../assets/AMaiorFlordoMundo1.png';
-import livro4 from '../../assets/AMaiorFlordoMundo4.png';
-import livro5 from '../../assets/AMaiorFlordoMundo4.png';
-import livro6 from '../../assets/JoséSaramago.png';
-import livro7 from '../../assets/AMaiorFlordoMundo4.png';
-import livro8 from '../../assets/JoséSaramago.png';
+import livro1 from '../../../assets/AMaiorFlordoMundo1.png';
+import livro2 from '../../../assets/AMaiorFlordoMundo2.png';
+import livro3 from '../../../assets/AMaiorFlordoMundo4.png';
+import livro4 from '../../../assets/JoséSaramago.png';
+import livro5 from '../../../assets/AMaiorFlordoMundo4.png';
+import livro6 from '../../../assets/AMaiorFlordoMundo1.png';
+import livro7 from '../../../assets/JoséSaramago.png';
+import livro8 from '../../../assets/AMaiorFlordoMundo2.png'
+
+// Biblioteca de icons
+import { AntDesign,  SimpleLineIcons,  FontAwesome5 } from '@expo/vector-icons';
 
 
+export function Reserva({navigation}){
 
-export function Home({navigation}){
-    
     function goProfile(){
         navigation.navigate('Profile')
     }
@@ -35,22 +34,13 @@ export function Home({navigation}){
         navigation.navigate('Reserva')
     }
 
-   return( 
-        <View style={styles.conatiner}>
-           <View style={styles.header}>
-                <Text style={styles.title}>Rosária Malheiro</Text>
-                <ScrollView  horizontal showsHorizontalScrollIndicator={false} style={styles.scrool}>
-                        <Text style={styles.options}>Todos</Text>
-                        <Text style={styles.options}>Contos</Text>
-                        <Text style={styles.options}>Ficção</Text>
-                        <Text style={styles.options}>Novela</Text>
-                        <Text style={styles.options}>Romace</Text>
-                        <Text style={styles.options}>Drama</Text>
-                        <Text style={styles.options}>Terror</Text>
-                </ScrollView>
-           </View>
-
-           <ScrollView>
+    return(
+        <View style={styles.container}>
+            <View style={styles.header}>
+                  <Text style={styles.title}>Reservar</Text>
+            </View>
+            
+            <ScrollView>
                 <View style={styles.livro}>
                     <View style={styles.containerImage}>
                         <Image source={livro1} style={styles.imageLeft} />
@@ -125,6 +115,7 @@ export function Home({navigation}){
                 </TouchableOpacity>
                 
            </View>
+
         </View>
     )
 }

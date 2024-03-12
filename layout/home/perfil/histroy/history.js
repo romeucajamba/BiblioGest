@@ -30,13 +30,17 @@ export function History({navigation}){
         navigation.navigate('Reserva')
     }
 
+    function goProfile(){
+        navigation.navigate('Profile')
+    }
+
     return(
         <View style={styles.container}>
 
             <View style={styles.header}>
                 <View style={styles.textAndBackButton}>
                     
-                    <TouchableOpacity style={styles.back}>
+                    <TouchableOpacity style={styles.back} onPress={goProfile}>
                         <Ionicons name="chevron-back" size={24} color="black" />
                     </TouchableOpacity>
                     <Text style={styles.myHistoryText}>O meu histórico</Text>

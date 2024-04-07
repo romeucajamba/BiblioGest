@@ -37,6 +37,10 @@ export function Profile({navigation}){
         navigation.navigate('History')
     }
 
+    function goEdit(){
+        navigation.navigate('Edit')
+    }
+
     return(
         <View style={styles.container}>
 
@@ -55,18 +59,18 @@ export function Profile({navigation}){
             <ScrollView style={styles.editContainer}>
 
                <View style={styles.bottons}>
-                     <TouchableOpacity style={styles.btn}>
-                        <FontAwesome name="edit" size={24} color="white" style={styles.icons}/>
+                     <TouchableOpacity style={styles.btn} onPress={goEdit}>
+                        <FontAwesome name="edit" size={20} color="white" style={styles.icons}/>
                         <Text style={styles.texto}>Editar dados Pessoais</Text>
                     </TouchableOpacity>
 
                      <TouchableOpacity style={styles.btn} onPress={goHistory}>
-                        <Fontisto name="history" size={24} color="white" style={styles.icons}/>
+                        <Fontisto name="history" size={20} color="white" style={styles.icons}/>
                         <Text style={styles.texto}>O meu histórico</Text>
                      </TouchableOpacity>
 
                     <TouchableOpacity onPress={out} style={styles.btn}>
-                         <Entypo name="log-out" size={24} color="white" style={styles.icons}/>
+                         <Entypo name="log-out" size={20} color="white" style={styles.icons}/>
                           <Text style={styles.texto}>Terminar sessão</Text>
                     </TouchableOpacity>
                </View>
@@ -77,17 +81,17 @@ export function Profile({navigation}){
             
             <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={goHome}>
-                    <AntDesign name="home" size={35} color="black" />
+                    <AntDesign name="home" size={30} color="black" />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={goProfile}>
-                    <AntDesign name="user" size={35} color="black"/>
+                    <AntDesign name="user" size={30} color="black"/>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={goSearch}>
-                        <AntDesign name="search1" size={35} color="black" />
+                        <AntDesign name="search1" size={30} color="black" />
                 </TouchableOpacity>
                 
                 <TouchableOpacity onPress={goReserva}>
-                        <SimpleLineIcons name="book-open" size={35} color="black" />
+                        <SimpleLineIcons name="book-open" size={30} color="black" />
                 </TouchableOpacity>
                 
            </View>

@@ -101,17 +101,17 @@ export function Reserva({navigation}){
 
            <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={goHome}>
-                    <AntDesign name="home" size={35} color="black" />
+                    <AntDesign name="home" size={30} color="black" />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={goProfile}>
-                    <AntDesign name="user" size={35} color="black" />
+                    <AntDesign name="user" size={30} color="black" />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={goSearch}> 
-                        <AntDesign name="search1" size={35} color="black" />
+                        <AntDesign name="search1" size={30} color="black" />
                 </TouchableOpacity>
                 
                 <TouchableOpacity onPress={goReserva}>
-                        <SimpleLineIcons name="book-open" size={35} color="black" />
+                        <SimpleLineIcons name="book-open" size={30} color="black" />
                 </TouchableOpacity>
                 
            </View>

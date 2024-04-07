@@ -17,16 +17,16 @@ export function SingUp({navigation}){
         
 
             <View style={styles.form}>
-                <Text style={styles.labelPass}>Nome</Text>
-                <TextInput placeholder="Insira a sua senha" style={styles.inputPass}/>
+                <Text style={styles.label}>Nome</Text>
+                <TextInput placeholder="Insira seu email" style={styles.inputPass}/>
                 <Text style={styles.label}>Email</Text>
                 <TextInput placeholder="Insira o seu email" style={styles.input}/>
-                <Text style={styles.labelPass}>Telemóvel</Text>
+                <Text style={styles.label}>Telemóvel</Text>
+                <TextInput placeholder="Insira seu telemóvel" style={styles.inputPass}/>
+                <Text style={styles.label}>Senha</Text>
                 <TextInput placeholder="Insira a sua senha" style={styles.inputPass}/>
-                <Text style={styles.labelPass}>Senha</Text>
-                <TextInput placeholder="Insira a sua senha" style={styles.inputPass}/>
-                <Text style={styles.labelPass}>Confirmar senha</Text>
-                <TextInput placeholder="Insira a sua senha" style={styles.inputPass}/>
+                <Text style={styles.label}>Confirmar senha</Text>
+                <TextInput placeholder="Confirme a sua senha" style={styles.inputPass}/>
             
                 <TouchableOpacity style={styles.btn} onPress={GoLoginScreen}>
                     <Text style={styles.text}>Criar</Text>

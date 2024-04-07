@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         width: '250px',
         height: '40px',
         marginLeft: '40px',
-        borderRadius: '10px',
+        borderRadius: '6px',
         paddingLeft: '10px',
         backgroundColor: '#ECECEC',
     },
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     navigationBar:{
         flexDirection: 'row',
         height: '60px',
-        alignItems: 'flex-end',
+        alignItems: 'center',
         justifyContent: 'space-evenly',
         borderTopWidth: '0.5px',
         borderTopLeftRadius: '12%',

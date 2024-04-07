@@ -43,7 +43,7 @@ export function Books({navigation}){
 
                 <View style={styles.searchContainer}>
                     <TextInput placeholder="Pesquise pelo título ou autor" style={styles.serach}/>
-                    <FontAwesome5 name="filter" size={35} color="#AA4700" style={styles.filter}/>
+                    <FontAwesome5 name="filter" size={30} color="#AA4700" style={styles.filter}/>
                 </View>
             </View>
 
@@ -108,17 +108,17 @@ export function Books({navigation}){
 
            <View style={styles.navigationBar}>
                 <TouchableOpacity onPress={goHome}>
-                    <AntDesign name="home" size={35} color="black" />
+                    <AntDesign name="home" size={30} color="black" />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={goProfile}>
-                    <AntDesign name="user" size={35} color="black" />
+                    <AntDesign name="user" size={30} color="black" />
                 </TouchableOpacity>
                 <TouchableOpacity onPress={goSearch}> 
-                        <AntDesign name="search1" size={35} color="black" />
+                        <AntDesign name="search1" size={30} color="black" />
                 </TouchableOpacity>
                 
                 <TouchableOpacity onPress={goReserva}>
-                        <SimpleLineIcons name="book-open" size={35} color="black" />
+                        <SimpleLineIcons name="book-open" size={30} color="black" />
                 </TouchableOpacity>
                 
            </View>

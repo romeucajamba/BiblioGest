@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         width: '310px',
         height: '40px',
         left: '25px',
-        borderRadius: '10px',
+        borderRadius: '6px',
         backgroundColor: '#ECECEC',
         paddingLeft: '10px',
         marginLeft: '25px',
@@ -55,13 +55,13 @@ const styles = StyleSheet.create({
         top: '30px',
         left: '110px',
         backgroundColor: '#AA4700',
-        borderRadius: '10px',
+        borderRadius: '6px',
         padding: '2px'
     },
     text:{
         color: '#ffffff',
         fontSize: '20px',
-        fontWeight: '600',
+        fontWeight: '400',
         textAlign: 'center'
     },
     draw:{

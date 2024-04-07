@@ -85,7 +85,7 @@ const styles = StyleSheet.create(
         navigationBar:{
             flexDirection: 'row',
             height: '60px',
-            alignItems: 'flex-end',
+            alignItems: 'center',
             justifyContent: 'space-evenly',
             borderTopWidth: '0.5px',
             borderTopLeftRadius: '12%',

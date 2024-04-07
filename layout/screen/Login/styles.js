@@ -59,13 +59,13 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         lineHeight: '22px',
         left: '25px',
-        top: '10px'
+        top: '15px'
     },
     input:{
         width: '310px',
         height: '40px',
         left: '25px',
-        borderRadius: '10px',
+        borderRadius: '6px',
         backgroundColor: '#ECECEC',
         paddingLeft: '10px',
         marginLeft: '25px',
@@ -74,9 +74,9 @@ const styles = StyleSheet.create({
     inputPass:{
         width: '310px',
         height: '40px',
-        marginTop: '11px',
+        marginTop: '12px',
         left: '25px',
-        borderRadius: '10px',
+        borderRadius: '6px',
         backgroundColor: '#ECECEC',
         paddingLeft: '10px',
         marginLeft: '25px',
@@ -87,13 +87,13 @@ const styles = StyleSheet.create({
         top: '30px',
         left: '115px',
         backgroundColor: '#AA4700',
-        borderRadius: '10px',
-        padding: '2px'
+        borderRadius: '6px',
+        padding: '4px'
     },
     text:{
         color: '#ffffff',
         fontSize: '20px',
-        fontWeight: '600',
+        fontWeight: '400',
         textAlign: 'center'
     },
     singUp:{

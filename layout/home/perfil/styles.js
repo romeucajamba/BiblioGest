@@ -83,7 +83,7 @@ const styles = StyleSheet.create(
             flexDirection: 'row',
             width: 'auto',
             height: '61px',
-            alignItems: 'flex-end',
+            alignItems: 'center',
             justifyContent: 'space-evenly',
             borderTopWidth: '0.5px',
             borderTopLeftRadius: '12%',

@@ -12,6 +12,8 @@ import { Profile } from '../../layout/home/perfil/profile';
 import { Books } from '../../layout/home/books/books';
 import { Reserva } from '../../layout/home/reservar/reserva';
 import { History } from '../../layout/home/perfil/histroy/history'; 
+import { editData } from '../../layout/home/perfil/edit/editData';
+
 
 const {Group, Screen, Navigator} = createNativeStackNavigator()
 //Navigator Permite criar as navegações
@@ -59,6 +61,11 @@ export function StackRoutes() {
                 <Screen 
                     name='Reserva'
                     component={Reserva}
+                />
+
+                <Screen 
+                    name='Edit'
+                    component={editData}
                 />
             </Group>
         </Navigator>

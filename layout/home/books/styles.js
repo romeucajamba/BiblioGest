@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     title:{
         color: '#000',
         fontWeight: 'bold',
-        textAlign: 'center',
+        marginLeft: '90px',
         fontSize: '20px'
     },
     searchContainer:{
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         width: '250px',
         height: '40px',
         marginLeft: '40px',
-        borderRadius: '10px',
+        borderRadius: '6px',
         paddingLeft: '10px',
         backgroundColor: '#ECECEC',
     },
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
                     navigationBar:{
                         flexDirection: 'row',
                         height: '60px',
-                        alignItems: 'flex-end',
+                        alignItems: 'center',
                         justifyContent: 'space-evenly',
                         borderTopWidth: '0.5px',
                         borderTopLeftRadius: '12%',

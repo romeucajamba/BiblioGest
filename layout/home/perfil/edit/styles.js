@@ -9,12 +9,11 @@ const styles = StyleSheet.create({
     header:{
         width: 'auto',
         flexDirection: 'column',
-        height: '300px',
+        height: '260px',
         flexDirection:"column",
-        backgroundColor: 'blue'
+        marginTop: '60px'
     },
     data:{
-        backgroundColor: 'red',
         flexDirection: 'row',
         width: 'auto', 
         marginTop: '30px',
@@ -28,12 +27,6 @@ const styles = StyleSheet.create({
         fontSize: '20px',
         fontWeight: '500'
     },
-    imageProfile:{
-        width: '142px',
-        height: '142px',
-        marginLeft: '30%',
-        marginTop: '4px',
-    },
     editContainer:{
         flexDirection: 'column',
         width: 'auto'
@@ -41,11 +34,99 @@ const styles = StyleSheet.create({
     editData:{
         flexDirection: 'row'
     },
-    form:{
-        flexDirection: 'column'
+    imageProfile:{
+        width: '142px',
+        height: '142px',
+        marginLeft: '40px',
+        marginTop: '4px',
     },
+    btnEdit:{
+        backgroundColor: '#AA4700',
+        width: '100px',
+        height: '40px',
+        borderRadius: '5px',
+        marginTop: '50px',
+        marginLeft: '10%',
+        padding: '4px'
+    },
+    txtEdit:{
+        fontSize: '20px',
+        fontWeight: '500',
+        textAlign: 'center',
+        color: 'white'
+    }, 
     personalData:{
-        flexDirection: 'column'
+        flexDirection: 'column',
+        width: '200px',
+        marginTop: '10px',
+        marginLeft: '5%',
+    },
+    nameData:{
+        textAlign: 'center',
+        fontWeight: '500'
+    },
+    emailData:{
+        textAlign: 'center'
+    },
+    form:{
+        flexDirection: 'column',
+        width: 'auto',
+        height: '420px',
+    },
+    label:{
+        fontSize: '15px',
+        fontWeight: '400',
+        lineHeight: '22px',
+        left: '25px',
+        top: '10px'
+    },
+    input:{
+        width: '310px',
+        height: '40px',
+        left: '25px',
+        borderRadius: '6px',
+        backgroundColor: '#ECECEC',
+        paddingLeft: '10px',
+        marginLeft: '25px',
+        color: '',
+        marginTop: '17px',
+    },
+    btnConatiner:{
+        flexDirection: 'row'
+    },
+    btnLeft:{
+        width: '131px',
+        height: '40px',
+        top: '30px',
+        left: '25px',
+        backgroundColor: '#AA4700',
+        borderRadius: '6px',
+        padding: '2px'
+    },
+    btnRight:{
+        width: '131px',
+        height: '40px',
+        top: '30px',
+        left: '70px',
+        backgroundColor: '#AA4700',
+        borderRadius: '6px',
+        padding: '2px'
+    },
+    text:{
+        color: '#ffffff',
+        fontSize: '20px',
+        fontWeight: '400',
+        textAlign: 'center'
+    },
+    navigationBar:{
+        flexDirection: 'row',
+        height: '60px',
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+        borderTopWidth: '0.5px',
+        borderTopLeftRadius: '12%',
+        borderTopRightRadius: '12%',
+        elevation: 20
     }
 })
 

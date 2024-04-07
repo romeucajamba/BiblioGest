@@ -8,7 +8,12 @@ import PassImage from '../../../assets/pass.svg';
 
 
 
-export function PassWord(){
+export function PassWord({navigation}){
+    
+    function goredifinir(){
+        navigation.navigate('Redefinir')
+    }
+
     return(
         <View style={styles.container}>
                 <View style={styles.header}>
@@ -26,7 +31,7 @@ export function PassWord(){
                 <Text style={styles.label}>Email</Text>
                 <TextInput placeholder="Insira o seu email" style={styles.input}/>
                 
-                <TouchableOpacity style={styles.btn}>
+                <TouchableOpacity style={styles.btn} onPress={goredifinir}>
                     <Text style={styles.text}>Recuperar</Text>
                 </TouchableOpacity>
                

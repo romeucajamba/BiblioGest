@@ -13,6 +13,7 @@ import { Books } from '../../layout/home/books/books';
 import { Reserva } from '../../layout/home/reservar/reserva';
 import { History } from '../../layout/home/perfil/histroy/history'; 
 import { editData } from '../../layout/home/perfil/edit/editData';
+import { RedefinirPassWord } from '../../layout/screen/getPassWord/redefinir/redefinir';
 
 
 const {Group, Screen, Navigator} = createNativeStackNavigator()
@@ -40,6 +41,11 @@ export function StackRoutes() {
                     name='PassWord'
                     component={PassWord}
                 />
+                <Screen 
+                    name='Redefinir'
+                    component={RedefinirPassWord}
+                />
+
                 <Screen 
                     name='Home'
                     component={Home}

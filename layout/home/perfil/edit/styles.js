@@ -7,16 +7,26 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
     },
     header:{
-        height: 180,
-        flexDirection:"column"
+        width: 'auto',
+        flexDirection: 'column',
+        height: '300px',
+        flexDirection:"column",
+        backgroundColor: 'blue'
     },
     data:{
         backgroundColor: 'red',
         flexDirection: 'row',
-        width: 'auto'
+        width: 'auto', 
+        marginTop: '30px',
     },
     back:{
-        left: '2%'
+        left: '2%',
+        marginLeft: '30px'
+    },
+    dataTxt:{
+        marginLeft: '50px',
+        fontSize: '20px',
+        fontWeight: '500'
     },
     imageProfile:{
         width: '142px',

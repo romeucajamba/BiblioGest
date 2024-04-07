@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     },
     btn:{
         width: '131px',
-        height: '34px',
+        height: '40px',
         top: '30px',
         left: '115px',
         backgroundColor: '#AA4700',
